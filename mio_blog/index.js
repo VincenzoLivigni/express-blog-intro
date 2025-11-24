@@ -36,8 +36,8 @@ const posts = [{                                                        // array
 }
 ]
 
-app.get("/", (req, res) => {                                            // "/" -> rotta principale
-    res.send("<h1>Server del mio blog</h1>");                           // contenuto HTML in risposta postman
+app.get("/bacheca", (req, res) => {                                     // "/" -> rotta principale  -- creo la rotta "bacheca"
+    res.json(posts);                                                    // contenuto HTML in risposta postman --  res.json() -> invia i dati sotto forma di json
 });
 
 
