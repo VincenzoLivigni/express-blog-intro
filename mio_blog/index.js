@@ -2,6 +2,7 @@ const express = require("express");
 const app = express();
 const port = 3000;                                                      // il server resta in ascolto sulla porta "3000"
 
+app.use(express.static("Public"));                                      // configuro gli asset statici dalla cartella "Public"
 
 
 const posts = [{                                                        // array di post
